@@ -1,0 +1,1378 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1117.1115                               -->
+<workbook original-version='18.1' source-build='2025.3.0 (20253.25.1117.1115)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='rechargedata (rechargeaiml)' inline='true' name='federated.01z0vu11iboz4j120n5av1x9wrzg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='rechargeaiml' name='excel-direct.0y91px21gfyhac1atnqx0174ziq3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/DELL/Downloads/rechargeaiml.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0y91px21gfyhac1atnqx0174ziq3' name='rechargedata' table='[rechargedata$]' type='table'>
+          <columns gridOrigin='A1:G17:no:A1:G17:0' header='yes' outcome='6'>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='amount' ordinal='1' />
+            <column datatype='string' name='recharge_type' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='string' name='status' ordinal='4' />
+            <column datatype='string' name='plan_name' ordinal='5' />
+            <column datatype='string' name='Region' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G17:no:A1:G17:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recharge_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[recharge_type]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>recharge_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plan_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plan_name]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>plan_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[rechargedata]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[rechargedata_D08589E2AEDE496286136CBCA273BD0C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='rechargedata' datatype='table' name='[__tableau_internal_object_id__].[rechargedata_D08589E2AEDE496286136CBCA273BD0C]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Plan Name' datatype='string' name='[plan_name]' role='dimension' type='nominal' />
+      <column caption='Recharge Type' datatype='string' name='[recharge_type]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='rechargedata' id='rechargedata_D08589E2AEDE496286136CBCA273BD0C'>
+            <properties context=''>
+              <relation connection='excel-direct.0y91px21gfyhac1atnqx0174ziq3' name='rechargedata' table='[rechargedata$]' type='table'>
+                <columns gridOrigin='A1:G17:no:A1:G17:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='integer' name='amount' ordinal='1' />
+                  <column datatype='string' name='recharge_type' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='string' name='status' ordinal='4' />
+                  <column datatype='string' name='plan_name' ordinal='5' />
+                  <column datatype='string' name='Region' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#e15759' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[avg:amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.4198894500732422' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CDEB62A9-E398-4AB2-91C7-8EB448C30963}' />
+    </worksheet>
+    <worksheet name='Total Customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column-instance column='[user_id]' derivation='CountD' name='[ctd:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[ctd:user_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='3.8342540264129639' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DF0552DC-9ACC-4034-ADC0-B90958883537}' />
+    </worksheet>
+    <worksheet name='Total Recharges'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[cnt:user_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='4.0076613426208496' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{598726CD-3617-4B4A-964F-7F4DFC1C33B5}' />
+    </worksheet>
+    <worksheet name='recharge trend line'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[status]' derivation='None' name='[none:status:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01z0vu11iboz4j120n5av1x9wrzg].[cnt:user_id:qk]</rows>
+        <cols>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{B358275D-22F6-4708-BBA5-067B07D291B6}' />
+    </worksheet>
+    <worksheet name='recharge type chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[recharge_type]' derivation='None' name='[none:recharge_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[status]' derivation='None' name='[none:status:nk]' pivot='key' type='nominal' />
+            <column caption='Recharge Type' datatype='string' name='[recharge_type]' role='dimension' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4612706899642944' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01z0vu11iboz4j120n5av1x9wrzg].[cnt:user_id:qk]</rows>
+        <cols>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:recharge_type:nk]</cols>
+      </table>
+      <simple-id uuid='{A7582EC0-3B54-4CE7-8E62-2C169DFF9522}' />
+    </worksheet>
+    <worksheet name='status pie chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[status]' derivation='None' name='[none:status:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' />
+              <wedge-size column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[cnt:user_id:qk]' />
+              <text column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{195C3725-848D-40F1-904E-E1B7184CFE76}' />
+    </worksheet>
+    <worksheet name='treemap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rechargedata (rechargeaiml)' name='federated.01z0vu11iboz4j120n5av1x9wrzg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01z0vu11iboz4j120n5av1x9wrzg'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <size column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[cnt:user_id:qk]' />
+              <text column='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BCA7578A-354D-4FA3-B63E-907DF0505BF6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#499894'>Telecom Recharge Analysis Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='24' param='horz' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='98000' id='19' param='horz' type-v2='layout-flow' w='82499' x='667' y='1000'>
+              <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='82499' x='667' y='1000'>
+                <zone fixed-size='43' h='6375' id='10' is-fixed='true' type-v2='title' w='82499' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='91625' id='7' type-v2='layout-basic' w='82499' x='667' y='7375'>
+                  <zone h='17625' id='12' param='horz' type-v2='layout-flow' w='82499' x='667' y='7375'>
+                    <zone h='17625' id='13' param='horz' type-v2='layout-flow' w='82499' x='667' y='7375'>
+                      <zone h='17625' id='15' name='Total Recharges' w='27499' x='667' y='7375'>
+                        <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='17625' id='14' name='Total Customers' w='27499' x='28166' y='7375'>
+                        <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='17625' id='16' name='Average Amount' w='27499' x='55665' y='7375'>
+                        <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='74000' id='21' param='vert' type-v2='layout-flow' w='82499' x='667' y='25000'>
+                    <zone h='22250' id='26' name='recharge type chart' w='82499' x='667' y='25000'>
+                      <layout-cache minheight='184' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='22250' id='27' name='recharge trend line' w='82499' x='667' y='47250'>
+                      <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='196' h='25500' id='22' is-fixed='true' name='status pie chart' w='82499' x='667' y='69500'>
+                      <layout-cache fixed-size-w='160' type-h='cell' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='4000' id='6' type-v2='empty' w='82499' x='667' y='95000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='194' h='98000' id='23' is-fixed='true' param='vert' type-v2='layout-flow' w='16167' x='83166' y='1000'>
+              <zone h='8250' id='25' name='status pie chart' pane-specification-id='0' param='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' type-v2='color' w='16167' x='83166' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#499894'>Telecom Recharge Analysis Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='28' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone fixed-size='43' h='6375' id='10' type-v2='title' w='82499' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='17625' id='15' is-fixed='true' name='Total Recharges' w='27499' x='667' y='7375'>
+                  <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='17625' id='14' is-fixed='true' name='Total Customers' w='27499' x='28166' y='7375'>
+                  <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='17625' id='16' is-fixed='true' name='Average Amount' w='27499' x='55665' y='7375'>
+                  <layout-cache cell-count-w='1' fixed-size-h='147' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' h='22250' id='26' is-fixed='true' name='recharge type chart' w='82499' x='667' y='25000'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' h='22250' id='27' is-fixed='true' name='recharge trend line' w='82499' x='667' y='47250'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='196' h='25500' id='22' is-fixed='true' name='status pie chart' w='82499' x='667' y='69500'>
+                  <layout-cache fixed-size-w='160' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='25' name='status pie chart' pane-specification-id='0' param='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' type-v2='color' w='16167' x='83166' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F01A09E2-B3EA-4C6A-970C-44883D28D98B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='status pie chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7946900B-5291-49DD-9C4C-E08251C008A4}' />
+    </window>
+    <window class='worksheet' name='recharge type chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:recharge_type:nk]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5198BEBC-3410-44BD-9305-50536319A9A0}' />
+    </window>
+    <window class='worksheet' name='recharge trend line'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{48A744C6-D348-4255-97E2-CE230D86781A}' />
+    </window>
+    <window class='worksheet' name='treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:Region:nk]</field>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA03228B-72C3-472B-93DA-B715CA521E5C}' />
+    </window>
+    <window class='worksheet' name='Total Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{902A1972-758A-4855-93C9-198CE10CE2BE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Amount'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Recharges'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='recharge trend line'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='recharge type chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='status pie chart'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:status:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{016C2A87-8490-4768-BAAF-FD7CC74F0CB8}' />
+    </window>
+    <window class='worksheet' name='Total Recharges'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01z0vu11iboz4j120n5av1x9wrzg].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{33E78530-7F0F-48D0-A251-8CC001BF883F}' />
+    </window>
+    <window class='worksheet' name='Average Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49BA116E-0FAC-43FA-8981-5AAE21952892}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Average Amount' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEsElEQVRYhe2XTWxUVRTHf+/Nm4/Xaad0aG1LEUpLCOlKsLQkGo2yA/wiAoluNCA2GNRE
+      guJConFlXEBBYWGM4SsKbdTITuXThdCFEh1qCWYG+pV0vvo6M515896710VxYNIWrQ6ZBfx3
+      73/PPfd/z7nvnHsVKaXkHoZabgHlxv0AlFtAuXE/AOUWUG7cD0C5BZQb9wNQbgHlxj0fAO2u
+      eBUCOx4nH4ngXrAArb4eRZthKSHIDw5iD4/gaWlBq38AFOW/+ZpFh5NMko9EcAWDuJuaUDye
+      IhOlpG8BIUifO4/x5VegqrgXPYg1NAy2RbCrC33FQwVTJ5Egtq8bJ5nE09JC/tqfuBcvZv72
+      LlS/H4D8tWvEug8gHQdvSwvW8BBOKkVwyxYqOjumB+smpGmSPHqMzIWfUP1+PM3NOPEY1sgo
+      lU8+wbwXX0Bxu28alxCZi5fk6Nu7pRmOFPHp8xfkyM5d0k4kpJRSCtuWse4DMnbgEynyeSml
+      lM5kVo599LFMHD4ipRDSTibl6K53ZPrsOSmFKPjKhkJy+LUdMjdwdVYdtmFI4+tvpGMYRbw1
+      NiZHd78r02fOFriS1gDv0lbq39+Dp3lxEa+3P4yrpgY7GgPAunEDa3SE6o0bC5lQdR/Vz2/A
+      DIWmjnw4jOLzore3F2Xa19aGZ2krZig0qw5XIEDg2WdQA4EiXqurQ1+5ktxvv9/i/veub184
+      GJyRl7kcMjuJ6vMCkA9H0Gpr0epqiwU2NKD4dKzBQVR/5dRc2yr25ThIy8JVUzN3gVJix2J4
+      WlsK1F3vAtI0GT96HK2hAa2xEQA7GsW9aNG0f1jVdVzzqnGS43iWNKM1NmL09CKyuSlftk3q
+      u1PInIm+qn1OOkQ2h3GyBycaw//4YwX+7nSBm7CGhoh178fd1ERw67bCcbdHR3EvXDjjHFcw
+      iJNIoLjdzN/2CukfTzOyfTtoGjJnUrlmDXW7dqJ4vf+4/mRfH9lLfViDgzjJcarWrZ02t7Rd
+      gKmMJz77nPz1CLWv75hxo0ZPL9JxmLd507Sx2N596KvaUX06E6dOUbfzrUJXAJCWRfzgIbyt
+      rVStWzsnbXY0Srx7P74VK6je8BxQ6l9ASpKHj2BHx6jf894ds2xFriMdp4gX2SwilcJVXU0+
+      HMa7fHnR5gEUt5uKjg6yv/yKzOfnJE+rq6N68ybMUAiRzQIlDkCuvx9zYID5Xa9OE347vEtb
+      seNxnGi0iM+Hw4hMZurC4nLhJJMwwwG1o1HUqqpbvXyOkFKCmPJb0gCYV/rxLluG1tBwRzut
+      qQnPkmaMk71I0wRApFIYJ06id3TgqqlB7+zADF0hc/5CURDMgaukv/8B/6OPFIroZF8fyS8O
+      I9JpAHKXLzPxzbeF77/hjI9jnOjB19aG6q8ASlwDYnv3MfnzxVnHa998g4rVnVMbzmSIf3oI
+      849+FK8PkclQsbqT4NYthcyaA1eJHzyEMAwUXQfHBhRqXn6p6CZo9PSSPn2Ghg8/KBTR5LHj
+      ZC/1oVbo4NJACKSZo2r9egJPP1VYo+RFcE6QEmd8HDsaw93YiFpVOaOZSKWRVh5UFVcgAOq/
+      PLhC4ExMgBAAqIHAtHfEX0NOslBOhueDAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      yfuRBwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='24' name='Total Customers' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAB60lEQVRYhe2Vv2tTURTHP2lr8yzGNqLGahOk2EEUU1qhGLSC4qAO+hcIQnEQC92ko4Oz
+      uDq4iIJSQWimuOjgD6hFpZroa4Pis6GGpNWGPmN7846LS9DYvCz3+cx3Pd9z+d7PPZwbEBHh
+      P1aL7gC61QSgO4BuNQHoDqBbTQC6A+hWE4DuALrVpjtAPXLEwSymWfxeJBE96qpXOYrZYgZb
+      2YSNLfSG+6rqngYgInz4OseDd3eZL1nEI4OuATyxHjFpTiAixCOD/w6A+ZLFvbe3yJUsdoai
+      dId6XJ+RX1ng8ceHnOg9zftC+o8ez+6Aa8+vopw1RgZGGRsaZ3tHxFW/chRJ8z6RTd0c6hmu
+      6fPsBJzvv8jerftpCTT2Ri8XprCWPzEycIn21mBNn2cnYN+2Aw1fvmDnSWWTJKLD7ApF/+r1
+      LIBGpRxFKpukywhzJHZ8Xb/vALzJv8JczHCq7yxGm7Gu37M7wK1EhInMbXKlz1xOXGHjho66
+      +nwzAenCDK+/THNyz5m6Lw8+mQB7bYVUdpL21iBTuae8yD2rqlekQsHOs7z6jTszNwE4HDtG
+      rHO3PwAoRxH49WNkl2Z/N4hQrpRZrfxgbskEoH/HQcAnE7A52MnY0HjNelmVuTF9nS4jzLn4
+      haqab3ZAo/oJrgGe9xBL3y0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='24' name='Total Recharges' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACZklEQVRYhe2Y30tTYRjHP+fsTN1aTpdLTTFrgi0VRLC8SBOELAhCbyKIiKA7/4Woi+6D
+      6E/wpguFoot+0MJILyZJoVkKS0tYpnPTznQ/zs45XZTTIdYZFOcw/V4+7/uF7/t5X54HXkHX
+      dZ09LNHsAGZrH4DZAczWPgCzA5itfQBmBzBbex6AZHYAI0orKomUQumBYgRBMOz5ML/E2noK
+      gCqPi4YaD5It984tDSClqLx8+5nB55PUeg9y50Y3zmL7Hz1KRmP49UeGRqZJKWrOmmQTuXmx
+      jfOnG7Zq/yP4v1BgYo7BF5PE5ASiwVtXMhoPhoOMTn2lr9PPpTONuBxFAER/JHg2HkJRtRyP
+      JQGEwjHuDwVpbajk9vWzPAxMEVnd+KsvMDHH2NQCA/2n6G6tz1nzlDq40tO8w2NJAN+jce4N
+      nONYdblhT0xO8Hh0ho6mWjpb6gz7LAmg42Qtomjs2W9qdiFKTE7S2+7DZjM+3Cw5BvM9PMD4
+      TBhvmZOjVe68fJZ8AfkqragsReNUH3Jlm95GSuHbSpzFlTi+mnIq3M4dIxAKBEBG00imMxTZ
+      JZ4GQzx684nF6Drb/3ocxRJ9nX76u/zYpS0QBQFA13U0/dche9t9XNg25ze1OSKv3h3m1rUu
+      mo8fBizaA/KVIAiIAqiatmv/sEsil3uacJbYeRdazNYLAoCjSMJT6iAmJ0mkMrvuK3OV4HU7
+      CUfkbK0gAAiCgO+Ih3BEJiYn8vIWBACAtsZqVFVj5P2XXfesxpMsr21woq4iWysYAPWVbtr9
+      NTwZm2V6fnnHuq7rvJqYR1U1Wn43QICfkt7HHRoRCcMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='recharge trend line' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='recharge type chart' width='176'>
+      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
+    </thumbnail>
+    <thumbnail height='164' name='status pie chart' width='164'>
+      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
+      8l9J4VcQuA6pTgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='treemap' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADQklEQVR4nO3Xz2qcVQCH4TN/MpJGGtGW1roT3Ig37PWIV9BNQcjOxGCinZCkmTSTcSW0
+      MEszA77Pszvf6rf4XjhnstlsNgOipvseAPskANLmnx5+/vWXcXJ5sa8tsHOfBXByeTHenp3u
+      awvsnCsQafNtH3/69s04u1qOL2bzcX2/GovZfLw5Ph7vzs/H/fph1xvhyWwN4F/PDw/Hd8df
+      jYub67H88MHPz//O1gD+vr0d8+ls3KxW4/L6ekwmk7F+fByL2Wzcr9e73ghPZmsAvy/f73oH
+      7IVHMGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEibf3r4/psX+9oBe/FZACeXF+Pt2em+tsDOuQKRtjWAH1+9Hi+O
+      jsZ0Mhnz6XRMxhhfP3s2Xh59OQ4PDnY8EZ7OfNvH9WYzfnj5avx1ezOmk8k4WizGerMZN6vV
+      eP38ePz25/m4e3jY9Vb4z20N4I+r5Vg9fBy39x/HfDodp8v342A2H4vZbJxeLcfD4+Oud8KT
+      2BrA8u5uLO/udr0Fds4jmDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBN
+      AKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiDtH0EVZb8zmmieAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
